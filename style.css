@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(2, 2, 39);
+}
+.container{
+    display: flex;
+    width: 1100px;
+    height: 400px;
+    background-color: rgb(39, 24, 77);
+    border-radius: 0.5rem;
+    color: #fff;
+    position: relative;
+}
+.text-card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 4rem;
+}
+.img-card{
+    width: 50%;
+    background: linear-gradient(rgba(110, 40, 128, 0.4)100%, rgba(139, 68, 156, 0.2)100%), url('./image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+h1, h5{
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2, p{
+    font-family: 'Crimson Text', serif; 
+}
+
+
+
+
+@media (max-width: 850px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 400px;
+        height: 700px;
+        margin: 5rem 0;
+    }
+    .img-card{
+        width: 100%;
+        height: 30%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .text-card{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 550px){
+    .container{
+        width: 350px;
+        height: 170vw;
+    }
+    .text-card h1{
+        font-size: 5vw;
+    }
+    .text-card p{
+        font-size: 3vw;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    footer h2{
+        font-size: 4vw;
+    }
+    footer h5{
+        font-size: 2vw;
+    }
+}
